@@ -196,4 +196,132 @@
 // }
 
 
+// Задача 19
+
+// Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+
+// 14212 -> нет
+
+// 12821 -> да
+
+// 23432 -> да
+// Console.Write("Введите число: ");
+// string number = Console.ReadLine();
+
+// void ProverkaChisla (string number)
+// {
+//     if (number[0]==number[4] && number[1]==number[3])
+//     {
+//         Console.WriteLine($"Ваше число: {number} - палиндром. ");
+//     }
+//     else Console.WriteLine($"Ваше число: {number} - не палиндром. ");
+// }
+
+// if (number!.Length == 5)
+// {
+//     ProverkaChisla(number);
+// }
+// else Console.WriteLine($"Введите правильное число");
+
+// Задача 21
+
+// Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+
+// A (3,6,8); B (2,1,-7), -> 15.84
+
+// A (7,-5, 0); B (1,-1,9) -> 11.53
+
+// static void Main(string[] args)
+//  {
+//         char selection;
+//         Double x1, x2, y1, y2, z1, z2, distance;
+
+//         Console.WriteLine("1. Расстояние между двумя точками на плоскости.");
+//         Console.WriteLine("2. Расстояние между двумя точками в пространстве.");
+//         Console.WriteLine("Выберите нужный пункт (1 или 2):");
+
+//         selection = Convert.ToChar(Console.ReadLine());
+
+//         switch (selection)
+//         {
+//             case '1':
+//                 Console.Write("Введите координаты x1: ");
+//                 x1 = Convert.ToDouble(Console.ReadLine());
+
+//                 Console.Write("Введите координаты x2: ");
+//                 x2 = Convert.ToDouble(Console.ReadLine());
+
+//                 Console.Write("Введите координаты y1: ");
+//                 y1 = Convert.ToDouble(Console.ReadLine());
+
+//                 Console.Write("Введите координаты y2: ");
+//                 y2 = Convert.ToDouble(Console.ReadLine());
+
+//                 distance = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
+//                 Console.WriteLine($"Расстояние между двумя точками на плоскости равно {distance}");
+//                 Console.ReadKey();
+//                 break;
+//             case '2':
+//                 Console.Write("Введите координаты x1: ");
+//                 x1 = Convert.ToDouble(Console.ReadLine());
+
+//                 Console.Write("Введите координаты x2: ");
+//                 x2 = Convert.ToDouble(Console.ReadLine());
+
+//                 Console.Write("Введите координаты y1: ");
+//                 y1 = Convert.ToDouble(Console.ReadLine());
+
+//                 Console.Write("Введите координаты y2: ");
+//                 y2 = Convert.ToDouble(Console.ReadLine());
+
+//                 Console.Write("Введите координаты z1: ");
+//                 z1 = Convert.ToDouble(Console.ReadLine());
+
+//                 Console.Write("Введите координаты z2: ");
+//                 z2 = Convert.ToDouble(Console.ReadLine());
+
+//                 distance = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2) + Math.Pow(z2 - z1, 2));
+//                 Console.WriteLine($"Расстояние между двумя точками в пространстве равно {distance}");
+//                 Console.ReadKey();
+//                 break;
+//             default:
+//                 Console.WriteLine("Вы ввели неверный символ");
+//                 Console.ReadKey();
+//                 break;
+//         }
+
+//     }
+// }
+
+// Задача 23
+
+// Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+
+// 3 -> 1, 8, 27
+// 5 -> 1, 8, 27, 64, 125
+
+// Console.Write("Введите число: ");
+// int cube = Convert.ToInt32(Console.ReadLine());
+
+// void Cube(int[] cube){
+//   int counter = 0;
+//   int length = cube.Length;
+//   while (counter <  length){
+//     cube[counter] = Convert.ToInt32(Math.Pow(counter, 3));
+//     counter++;
+//   }
+// }
+
+// void PrintArry(int[] coll){
+//   int count = coll.Length;
+//   int index = 1;
+//   while(index < count){
+//     Console.Write(coll[index]+ " ");
+//     index++;
+//   }
+// } 
+
+// int[] array = new int[cube+1];
+// Cube(array);
+// PrintArry(array);
 
